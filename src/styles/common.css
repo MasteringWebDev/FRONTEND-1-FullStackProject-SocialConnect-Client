@@ -1,0 +1,22 @@
+.form-container {
+  width: 20em;
+}
+
+.single-feed-container {
+  width: 18rem;
+}
+
+.social-connect-button {
+  background: linear-gradient(#f9ce34, #ee2a7b);
+  border: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .form-container {
+    width: 90%;
+  }
+
+  .single-feed-container {
+    width: 100%;
+  }
+}
