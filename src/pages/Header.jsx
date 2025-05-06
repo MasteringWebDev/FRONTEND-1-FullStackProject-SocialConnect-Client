@@ -1,4 +1,5 @@
 import { Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import headerIcon from '../assets/header.gif'
 
 const styles = {
@@ -10,11 +11,13 @@ const styles = {
   },
   signUp: {
     background: 'linear-gradient(#f9ce34, #ee2a7b)',
-    border: 'none'
+    border: 'none',
+    color: 'white'
   },
   signIn: {
     background: 'linear-gradient( #ee2a7b, #6228d7)',
-    border: 'none'
+    border: 'none',
+    color: 'white'
   }
 }
 
@@ -26,16 +29,16 @@ const Header = () => {
       </h1>
       <img src={headerIcon} width={200} />
       <p className='lead'>Find friends and share your thoughts ... 💭</p>
-      <Button 
-        variant="secondary" 
+      <Link
+        to='/signup'
         style={styles.signUp}
-        className='mx-1 btn-lg'
-      >Sign up</Button>
-      <Button 
-        variant="secondary"
+        className='btn mx-1 btn-lg'
+      >Sign up</Link>
+      <Link
+        to='/signin'
         style={styles.signIn}
-        className='mx-1 btn-lg'
-      >Sign in</Button>
+        className='btn mx-1 btn-lg'
+      >Sign in</Link>
     </div>
   )
 }
